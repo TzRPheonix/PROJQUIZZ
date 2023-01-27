@@ -16,7 +16,7 @@ abstract class  QuizzDatabase : RoomDatabase() {
 
         fun getDatabase(context: Context): QuizzDatabase {
             val tempInstance = INSTANCE
-            Log.e("result1", tempInstance.toString())
+            Log.e("verifInstanceBefore", tempInstance.toString())
             if (tempInstance != null) {
                 return tempInstance
             }
@@ -27,7 +27,7 @@ abstract class  QuizzDatabase : RoomDatabase() {
                     "quizz_database"
                 ).build()
                 INSTANCE = instance
-                Log.e("result2", INSTANCE.toString())
+                Log.e("verifInstanceAfter", INSTANCE.toString())
                 return instance
             }
         }
