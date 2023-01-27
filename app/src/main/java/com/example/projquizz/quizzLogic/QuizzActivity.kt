@@ -65,8 +65,8 @@ class QuizzActivity : AppCompatActivity() {
             radioButtonD.text = question.repD
             radioButtonD.textSize = 20f
             timer = object : CountDownTimer(30000, 1000) {
-                override fun onTick(millisUntilFinished: Long) {
-                    textViewTimer.text = "Time remaining: " + millisUntilFinished / 1000
+                override fun onTick(msBeforeFinish: Long) {
+                    textViewTimer.text = "Time remaining: " + msBeforeFinish / 1000
                     textViewTimer.setTextSize(20f)
                 }
 
