@@ -1,0 +1,58 @@
+{
+  "quizzName": "QuizzName",
+  "category": "QuizzCategory",
+  "questions": [
+    {
+      "id": "?",
+      "quizzId": "?",
+      "questionStr": "Question?",
+      "repA": "repA",
+      "repB": "repB",
+      "repC": "repC",
+      "repD": "repD",
+      "reponse": "reponse"
+    },
+    {
+      "id": "?",
+      "quizzId": "?",
+      "questionStr": "Question?",
+      "repA": "repA",
+      "repB": "repB",
+      "repC": "repC",
+      "repD": "repD",
+      "reponse": "reponse"
+    },
+    {
+      "id": "?",
+      "quizzId": "?",
+      "questionStr": "Question?",
+      "repA": "repA",
+      "repB": "repB",
+      "repC": "repC",
+      "repD": "repD",
+      "reponse": "reponse"
+    },
+    {
+      "id": "?",
+      "quizzId": "?",
+      "questionStr": "Question?",
+      "repA": "repA",
+      "repB": "repB",
+      "repC": "repC",
+      "repD": "repD",
+      "reponse": "reponse"
+    },
+    {
+      "id": "?",
+      "quizzId": "?",
+      "questionStr": "Question?",
+      "repA": "repA",
+      "repB": "repB",
+      "repC": "repC",
+      "repD": "repD",
+      "reponse": "reponse"
+    }
+  ]
+}
+           
+

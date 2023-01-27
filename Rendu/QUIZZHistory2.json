@@ -1,0 +1,56 @@
+﻿{
+  "quizzName": "Japanese History Quizz",
+  "category": "history",
+  "questions": [
+    {
+      "id": 1,
+      "quizzId": 1,
+      "questionStr": "Which era in Japanese history saw the rise of the samurai class?",
+      "repA": "Edo Period",
+      "repB": "Heian Period",
+      "repC": "Kamakura Period",
+      "repD": "Meiji Period",
+      "reponse": "Kamakura Period"
+    },
+    {
+      "id": 2,
+      "quizzId": 1,
+      "questionStr": "Which shogun ruled Japan during the Edo Period?",
+      "repA": "Tokugawa Ieyasu",
+      "repB": "Ashikaga Takauji",
+      "repC": "Toyotomi Hideyoshi",
+      "repD": "Oda Nobunaga",
+      "reponse": "Tokugawa Ieyasu"
+    },
+    {
+      "id": 3,
+      "quizzId": 1,
+      "questionStr": "Which emperor of Japan reigned during World War II?",
+      "repA": "Emperor Hirohito",
+      "repB": "Emperor Taisho",
+      "repC": "Emperor Meiji",
+      "repD": "Emperor Go-Sakuramachi",
+      "reponse": "Emperor Hirohito"
+    },
+    {
+      "id": 4,
+      "quizzId": 1,
+      "questionStr": "Which battle marked the end of the Sengoku Period?",
+      "repA": "Battle of Sekigahara",
+      "repB": "Battle of Nagashino",
+      "repC": "Battle of Kawanakajima",
+      "repD": "Battle of Okinawa",
+      "reponse": "Battle of Sekigahara"
+    },
+    {
+      "id": 5,
+      "quizzId": 1,
+      "questionStr": "Who was the first shogun of the Kamakura Period?",
+      "repA": "Minamoto no Yoritomo",
+      "repB": "Hōjō Tokimune",
+      "repC": "Ashikaga Takauji",
+      "repD": "Oda Nobunaga",
+      "reponse": "Minamoto no Yoritomo"
+    }
+  ]
+}

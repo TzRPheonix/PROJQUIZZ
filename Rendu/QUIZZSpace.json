@@ -1,0 +1,58 @@
+{
+  "quizzName": "Space Quizz",
+  "category": "space",
+  "questions": [
+    {
+      "id": 1,
+      "quizzId": 1,
+      "questionStr": "Which planet is known as the Red Planet?",
+      "repA": "Mars",
+      "repB": "Jupiter",
+      "repC": "Saturn",
+      "repD": "Venus",
+      "reponse": "Mars"
+    },
+    {
+      "id": 2,
+      "quizzId": 1,
+      "questionStr": "Which planet has the most number of moons?",
+      "repA": "Jupiter",
+      "repB": "Saturn",
+      "repC": "Uranus",
+      "repD": "Neptune",
+      "reponse": "Jupiter"
+    },
+    {
+      "id": 3,
+      "quizzId": 1,
+      "questionStr": "What is the largest planet in our solar system?",
+      "repA": "Jupiter",
+      "repB": "Saturn",
+      "repC": "Uranus",
+      "repD": "Neptune",
+      "reponse": "Jupiter"
+    },
+    {
+      "id": 4,
+      "quizzId": 1,
+      "questionStr": "What is the name of the galaxy that contains our solar system?",
+      "repA": "Andromeda",
+      "repB": "Milky Way",
+      "repC": "Triangulum",
+      "repD": "Whirlpool",
+      "reponse": "Milky Way"
+    },
+    {
+      "id": 5,
+      "quizzId": 1,
+      "questionStr": "What is the name of the closest star to Earth?",
+      "repA": "Proxima Centauri",
+      "repB": "Alpha Centauri",
+      "repC": "Betelgeuse",
+      "repD": "Antares",
+      "reponse": "Proxima Centauri"
+    }
+  ]
+}
+           
+

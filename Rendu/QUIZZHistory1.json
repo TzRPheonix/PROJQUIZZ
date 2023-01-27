@@ -1,0 +1,56 @@
+{
+  "quizzName": "French History Quizz",
+  "category": "history",
+  "questions": [
+    {
+      "id": 1,
+      "quizzId": 1,
+      "questionStr": "Which king is known as 'The Sun King'?",
+      "repA": "Louis XIV",
+      "repB": "Louis XV",
+      "repC": "Louis XVI",
+      "repD": "Louis XVII",
+      "reponse": "Louis XIV"
+    },
+    {
+      "id": 2,
+      "quizzId": 1,
+      "questionStr": "Which queen consort was executed during the French Revolution?",
+      "repA": "Marie Antoinette",
+      "repB": "Josephine Bonaparte",
+      "repC": "Anne of Austria",
+      "repD": "Marie de Medici",
+      "reponse": "Marie Antoinette"
+    },
+    {
+      "id": 3,
+      "quizzId": 1,
+      "questionStr": "Which French emperor was exiled to the island of Elba?",
+      "repA": "Napoleon Bonaparte",
+      "repB": "Louis Bonaparte",
+      "repC": "Napoleon III",
+      "repD": "Napoleon II",
+      "reponse": "Napoleon Bonaparte"
+    },
+    {
+      "id": 4,
+      "quizzId": 1,
+      "questionStr": "Which treaty marked the end of the Hundred Years War?",
+      "repA": "Treaty of Paris",
+      "repB": "Treaty of Versailles",
+      "repC": "Treaty of Tordesillas",
+      "repD": "Treaty of Troyes",
+      "reponse": "Treaty of Troyes"
+    },
+    {
+      "id": 5,
+      "quizzId": 1,
+      "questionStr": "Which French king was known as 'The Spider King'?",
+      "repA": "Louis IX",
+      "repB": "Louis XI",
+      "repC": "Louis XII",
+      "repD": "Louis XIII",
+      "reponse": "Louis XI"
+    }
+  ]
+}
