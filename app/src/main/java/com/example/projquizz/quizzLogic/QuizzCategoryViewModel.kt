@@ -44,13 +44,13 @@ class QuizzCategoryViewModel(application: Application) : AndroidViewModel(applic
 
         @Deprecated("Deprecated in Java")
         override fun onPostExecute(result: Quizz?) {
-            Log.e("result4", result.toString())
+            Log.e("quizzResult", result.toString())
             if (result != null) {
                 val intent = Intent(context, QuizzActivity::class.java)
-                Log.e("result5", context.toString())
+                Log.e("verifContextBefore", context.toString())
                 intent.putExtra("quizz", result)
                 context.startActivity(intent)
-                Log.e("result6", context.toString())
+                Log.e("verifContextAfter", context.toString())
             } else {
                 // Au cas ou un Quizz serait supprimé pendant le chargement des boutons
                 Toast.makeText(context, "No quizzes available for this category", Toast.LENGTH_SHORT).show()

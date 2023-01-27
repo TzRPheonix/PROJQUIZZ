@@ -51,7 +51,7 @@ class QuizzActivity : AppCompatActivity() {
         this.questions = questions
         if (currentQuestion < questions.size) {
             val question = questions[currentQuestion]
-            Log.e("question", question.toString())
+            Log.e("afficheQuestion", question.toString())
             textViewQuestion.text = question.questionStr
             radioButtonA.text = question.repA
             radioButtonB.text = question.repB
@@ -101,7 +101,7 @@ class QuizzActivity : AppCompatActivity() {
             if (selectedAnswer == correctAnswer) {
                 score++
                 textViewScore.text = "Score: $score"
-                Log.e("erroooor",textViewScore.text.toString())
+                Log.e("displayScore",textViewScore.text.toString())
             }else{
                 Toast.makeText(this@QuizzActivity, "The answer was $correctAnswer", Toast.LENGTH_SHORT).show()
             }
@@ -119,7 +119,7 @@ class QuizzActivity : AppCompatActivity() {
             val questions = questionDao.getQuestionsByQuizzId(params[0]!!.toInt())
 
             for (question in questions) {
-                Log.e("resultBefore", question.questionStr)
+                Log.e("questionBefore", question.questionStr)
             }
             return questions
         }
@@ -129,7 +129,7 @@ class QuizzActivity : AppCompatActivity() {
             super.onPostExecute(result)
             if (result != null) {
                 for (question in result) {
-                    Log.e("resultAfter", question.questionStr)
+                    Log.e("questionAfter", question.questionStr)
                 }
                 context.updateQuestion(result)
             }

@@ -27,7 +27,7 @@ class QuizzCategoryActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this).get(QuizzCategoryViewModel::class.java)
         viewModel.categories.observe(this, Observer { categories ->
             for (category in categories) {
-                Log.e("result3", category)
+                Log.e("categoryResult", category)
                 val button = Button(this)
                 button.text = category
                 button.setOnClickListener {
