@@ -65,8 +65,8 @@ class QuizzActivity : AppCompatActivity() {
                 override fun onFinish() {
                     textViewTimer.text = "Time's up!"
                     currentQuestion++
+                    Toast.makeText(this@QuizzActivity, "Time's up! Question Skipped the answer was ${question.reponse}", Toast.LENGTH_SHORT).show()
                     updateQuestion(questions)
-                    Toast.makeText(this@QuizzActivity, "Time's up! Question Skipped", Toast.LENGTH_SHORT).show()
                 }
             }.start()
         } else {

@@ -2,9 +2,11 @@ package com.example.projquizz.ajoutBDD
 
 import android.annotation.SuppressLint
 import android.app.Application
+import android.content.Context
 import android.net.Uri
 import android.os.AsyncTask
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import com.example.projquizz.database.*
 import org.json.JSONObject

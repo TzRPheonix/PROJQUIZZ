@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             val uri: Uri? = data?.data
             if (uri != null) {
                 viewModel.importQuestions(uri)
+                Toast.makeText(this, "JSON imported", Toast.LENGTH_SHORT).show()
             }
         }
     }
