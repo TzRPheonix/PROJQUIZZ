@@ -53,13 +53,21 @@ class QuizzActivity : AppCompatActivity() {
             val question = questions[currentQuestion]
             Log.e("afficheQuestion", question.toString())
             textViewQuestion.text = question.questionStr
+            textViewQuestion.setTextColor(Color.parseColor("#F44336"))
+            textViewQuestion.setTypeface(null, Typeface.BOLD)
+            textViewQuestion.setTextSize(25f)
             radioButtonA.text = question.repA
+            radioButtonA.textSize = 20f
             radioButtonB.text = question.repB
+            radioButtonB.textSize = 20f
             radioButtonC.text = question.repC
+            radioButtonC.textSize = 20f
             radioButtonD.text = question.repD
+            radioButtonD.textSize = 20f
             timer = object : CountDownTimer(30000, 1000) {
                 override fun onTick(millisUntilFinished: Long) {
                     textViewTimer.text = "Time remaining: " + millisUntilFinished / 1000
+                    textViewTimer.setTextSize(20f)
                 }
 
                 override fun onFinish() {
@@ -90,6 +98,7 @@ class QuizzActivity : AppCompatActivity() {
             buttonShare.setTypeface(null, Typeface.BOLD)
             buttonShare.setTextSize(20f)
             buttonShare.setBackgroundColor(Color.parseColor("#F44336"))
+            radioGroupAnswers.isEnabled = false
         }
     }
 
@@ -101,6 +110,7 @@ class QuizzActivity : AppCompatActivity() {
             if (selectedAnswer == correctAnswer) {
                 score++
                 textViewScore.text = "Score: $score"
+                textViewScore.setTextSize(20f)
                 Log.e("displayScore",textViewScore.text.toString())
             }else{
                 Toast.makeText(this@QuizzActivity, "The answer was $correctAnswer", Toast.LENGTH_SHORT).show()
