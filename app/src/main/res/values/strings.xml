@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PROJQUIZZ</string>
+    <string name="app_name">QuizzGame</string>
     <string name="resultat_des_quizz">Resultat des QUIZZ</string>
     <string name="quizz">QUIZZ</string>
     <string name="ajouter_un_quizz">Ajouter un QUIZZ</string>
@@ -14,4 +14,13 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="categorie">Categorie</string>
+    <string name="select_a_category">Select a category</string>
+    <string name="question_goes_here">Question goes here</string>
+    <string name="answer_a_goes_here">Answer A goes here</string>
+    <string name="answer_b_goes_here">Answer B goes here</string>
+    <string name="answer_c_goes_here">Answer C goes here</string>
+    <string name="answer_d_goes_here">Answer D goes here</string>
+    <string name="submit">Submit</string>
+    <string name="score_0">Score: 0</string>
+    <string name="time_remaining_30">Time remaining: 30</string>
 </resources>

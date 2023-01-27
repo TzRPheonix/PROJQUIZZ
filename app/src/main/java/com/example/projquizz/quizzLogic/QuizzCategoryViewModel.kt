@@ -17,16 +17,19 @@ class QuizzCategoryViewModel(application: Application) : AndroidViewModel(applic
     private val quizzDao: QuizzDao
     val categories: LiveData<List<String>>
 
+    // Initie la database
     init {
         val database = QuizzDatabase.getDatabase(application)
         quizzDao = database.quizzDao
         categories = quizzDao.getAllCategories()
     }
 
+    // Permet d'aller chercher un Quizz aléatoire dans la catégorie
     fun getRandomQuizzByCategory(category: String, context: Context) {
         GetRandomQuizzTask(quizzDao, context).execute(category)
     }
 
+    // Logique d'extraction du Quizz avec une sécurité en cas de BDD vide
     class GetRandomQuizzTask(val quizzDao: QuizzDao, val context: Context) : AsyncTask<String, Void, Quizz?>() {
         @Deprecated("Deprecated in Java")
         override fun doInBackground(vararg params: String): Quizz? {

@@ -1,6 +1,8 @@
 package com.example.projquizz.quizzLogic
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.Typeface
 import android.os.AsyncTask
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -25,6 +27,7 @@ class QuizzActivity : AppCompatActivity() {
     private lateinit var timer: CountDownTimer
     private lateinit var questions: List<Question>
 
+    // Récupère la donnée dans un intent.extra
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quizz_display)
@@ -43,6 +46,7 @@ class QuizzActivity : AppCompatActivity() {
         }
     }
 
+    // Change la question en cas de réponse ainsi que le timer
     private fun updateQuestion(questions: List<Question>) {
         this.questions = questions
         if (currentQuestion < questions.size) {
@@ -76,15 +80,20 @@ class QuizzActivity : AppCompatActivity() {
             buttonShare.setOnClickListener {
                 val shareIntent = Intent().apply {
                     action = Intent.ACTION_SEND
-                    putExtra(Intent.EXTRA_TEXT, "I scored $score !")
+                    putExtra(Intent.EXTRA_TEXT, "I scored $score on ${quizz.name}!")
                     type = "text/plain"
                 }
                 startActivity(Intent.createChooser(shareIntent, "Share score"))
             }
             layout.addView(buttonShare)
+            buttonShare.setTextColor(Color.WHITE)
+            buttonShare.setTypeface(null, Typeface.BOLD)
+            buttonShare.setTextSize(20f)
+            buttonShare.setBackgroundColor(Color.parseColor("#F44336"))
         }
     }
 
+    // Vérifie la réponse update le score et éteint le timer courant
     private fun checkAnswer() {
         if (radioGroupAnswers.checkedRadioButtonId != -1) {
             val selectedAnswer = findViewById<RadioButton>(radioGroupAnswers.checkedRadioButtonId).text.toString()
@@ -93,6 +102,8 @@ class QuizzActivity : AppCompatActivity() {
                 score++
                 textViewScore.text = "Score: $score"
                 Log.e("erroooor",textViewScore.text.toString())
+            }else{
+                Toast.makeText(this@QuizzActivity, "The answer was $correctAnswer", Toast.LENGTH_SHORT).show()
             }
             timer.cancel()
             currentQuestion++
@@ -100,6 +111,7 @@ class QuizzActivity : AppCompatActivity() {
         }
     }
 
+    // Function récupérant chaque question par l'id Quizz
     class RetrieveQuestionsTask(val context: QuizzActivity) : AsyncTask<Long, Void, List<Question>>() {
         @Deprecated("Deprecated in Java")
         override fun doInBackground(vararg params: Long?): List<Question> {

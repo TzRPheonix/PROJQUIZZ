@@ -14,6 +14,7 @@ class LoadActivity(application: Application) : AndroidViewModel(application) {
     private val quizzDao: QuizzDao = QuizzDatabase.getDatabase(application).quizzDao
     private val contentResolver = application.contentResolver
 
+    // Importe les questions dans la base de données
     fun importQuestions(uri: Uri) {
         val task = @SuppressLint("StaticFieldLeak")
         object : AsyncTask<Void, Void, Unit>() {

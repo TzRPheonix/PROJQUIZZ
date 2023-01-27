@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     private val READ_REQUEST_CODE = 1
     private val viewModel: LoadActivity by viewModels()
 
-
+    // Action sur les boutons
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Pour l'import de JSON
     @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

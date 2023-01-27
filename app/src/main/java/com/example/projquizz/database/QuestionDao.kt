@@ -16,6 +16,7 @@ interface QuestionDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(questions: List<Question>)
 
+    // Permet de récuperer les questions d'un Quizz grâce à son id
     @Query("SELECT * FROM questions WHERE quizzId = :quizzId")
     fun getQuestionsByQuizzId(quizzId: Int): List<Question>
 }

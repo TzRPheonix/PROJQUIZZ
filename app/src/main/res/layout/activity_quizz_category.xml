@@ -11,14 +11,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/txt_category_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:padding="16dp"
-            android:text="Select a category:"
+            android:text="@string/select_a_category"
             android:textSize="24sp" />
 
     </LinearLayout>
@@ -47,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bouton_retour"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,UsingOnClickInXml" />
 
 
 </LinearLayout>
